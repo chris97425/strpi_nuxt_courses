@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_card_formation_formateur_cards",
+  "info": {
+    "displayName": "Formateur_card",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title_formateur": {
+      "type": "string"
+    },
+    "Image_formateur": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "link_formateur": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    },
+    "subtitle_formateur": {
+      "type": "text"
+    },
+    "body_text": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
